@@ -1,0 +1,74 @@
+.hero{
+    height: 650px;
+    background-color:rgba(45, 38, 65, 1) ;
+    background-image: url("../images/Group171.png");
+    background-repeat: no-repeat; 
+    background-position: right; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    
+
+    &__box{
+        width: 35%;
+
+        &__btn{
+            width: 35%;
+            height: 2px;
+            background-color: rgba(255, 255, 255, 1);
+            border: none;
+        }
+        & h1{
+            font-size: 62px;
+            font-weight: 400;
+            line-height: 52px;
+            color: whitesmoke;
+        }
+        & p{
+            color: rgba(255, 255, 255, 1);
+            line-height: 25px;
+            margin-bottom: 3rem;
+        }
+        &__btn2{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+            border: 2px solid rgba(255, 255, 255, 1);
+            padding: 11px 33px;
+            font-weight: 600;
+        } 
+        &__btn2:hover{
+            background-color: rgba(255, 255, 255, 1);
+            color: initial;
+        }
+    }
+    &__img{
+        max-width: 100%;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .hero{
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        // margin-top: 60%;
+        
+        &__img{
+            margin: 0;
+        }
+        &__box{
+            width: 88%;
+            padding: 5% 0 30%;
+
+            &__btn{
+                display: none;
+            }
+            & h1{
+                font-size: 45px
+            }
+        }
+
+    }
+}

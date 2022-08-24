@@ -1,0 +1,51 @@
+.sec2{
+    margin-top: 20%;
+    padding: 0 7rem;
+
+    &__btn{
+        width: 20%; height: 2px;
+        border: none;
+        background-color: rgba(195, 150, 198, 1);
+    }
+    &__title{
+        color: rgba(44, 40, 48, 1);
+        font-size: 62px;
+        font-weight: 400;
+    }
+    &__card{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 33px;
+
+        &__box{
+            width: 35%;
+            list-style: none;
+
+            & p{
+                color: rgba(131, 125, 136, 1);
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .sec2{
+        padding: 0;
+
+        &__btn{
+            width: 50%;
+        }
+        &__title{
+            font-size: 45px;
+        }
+        &__card{
+            flex-direction: column;
+
+            &__box{
+               width: 88%;
+            }
+        }
+    }
+}

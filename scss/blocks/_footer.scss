@@ -1,0 +1,63 @@
+.foot{
+    background-image: url("../images/Group22.png");
+    background-repeat: no-repeat;
+    background-position:top left;
+    margin: 20% 8% 0;
+    // border: 1px solid;
+
+    &__card0{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__img:hover{
+        border: 2px solid rgba(131, 125, 136, 1);
+        border-radius: 7px;
+        padding: 2px;
+    }
+
+    &__btn{
+        border: none;
+        width: 100%; height: 1px;
+        background-color: rgba(218, 218, 218, 1);
+    }
+
+    &__card{
+        display: flex;
+        align-items: center;
+        gap: 15%;
+        &__box{
+            // border: 1px solid;
+            padding: 0;
+            & li{
+                line-height: 32px;
+                list-style: none;
+                color: rgba(45, 38, 65, 1);
+                font-weight: 700;
+                a{
+                    color: rgba(131, 125, 136, 1);
+                    text-decoration: none;
+                    line-height: 72px;
+                }
+            }
+            & li:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .foot{
+       margin-top: 40%;
+        
+        &__card0{
+            flex-direction: column;
+            gap: 22px;
+        }
+        &__card{
+            flex-direction: column;
+        }
+        
+    }
+}

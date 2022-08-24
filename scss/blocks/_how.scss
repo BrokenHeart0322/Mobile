@@ -1,0 +1,44 @@
+.how{
+    background-color: rgba(45, 38, 65, 1);
+    background-image: url("../images/Group110.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around; 
+    margin: 10% 8% 0;
+
+    &__text{
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 48px;
+        color: whitesmoke;
+        width: 50%;
+    }
+    &__btn{
+        color: rgba(255, 255, 255, 1);
+        background-color: initial;
+        border: 2px solid rgba(255, 255, 255, 1);
+        padding: 11px 33px;
+        font-weight: 600;
+    }
+    &__btn:hover{
+        background-color: rgba(255, 255, 255, 1);
+        color: initial;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .how{
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        margin: 30% 8%;
+
+        &__text{
+            width: 88%;
+            font-size: 32px;
+            line-height: 28px;
+        }
+    }
+}

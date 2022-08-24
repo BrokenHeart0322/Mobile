@@ -1,0 +1,12 @@
+.wrapper{
+    width: 1333px;
+    margin: 0 auto; 
+    // border: 1px solid;
+    box-sizing: content-box;
+}
+@media screen and (max-width:430px) {
+    .wrapper{
+        width: 370px;
+        text-align: center;
+    }
+}
