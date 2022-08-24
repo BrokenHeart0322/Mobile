@@ -45,7 +45,7 @@
         display: none;
         max-width: 100%;
     }
-    &__burger:active ~ &__img{
+    &__burger:hover ~ &__img{
         display: block;
     }
 }
@@ -61,7 +61,7 @@
         &__burger{
             display: block;
         }
-        &__burger:active ~ &__img{
+        &__burger:hover ~ &__img{
             display: block;
             top: 0;
         }
