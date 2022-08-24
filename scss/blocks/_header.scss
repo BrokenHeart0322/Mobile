@@ -3,6 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem ;
+    position: relative;
     // border: 1px solid;
 
     &__nav{
@@ -32,10 +33,20 @@
             background-color: rgba(44, 40, 48, 1);
         }
     }
+
     &__burger{
         // position: absolute;
         display: none;
-        z-index: -1;
+    }
+
+    &__img{
+        position: absolute;
+        right: 0;
+        display: none;
+        max-width: 100%;
+    }
+    &__burger:hover ~ &__img{
+        display: block;
     }
 }
 
@@ -49,6 +60,10 @@
         }
         &__burger{
             display: block;
+        }
+        &__burger:hover ~ &__img{
+            display: block;
+            top: 0;
         }
     }
 }
